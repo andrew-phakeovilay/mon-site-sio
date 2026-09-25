@@ -7,4 +7,4 @@
 
 ## Historique de commits
 
-- * c228106 (HEAD -> main, origin/main) Ajout du site web
+* c228106 (HEAD -> main, origin/main) Ajout du site web
