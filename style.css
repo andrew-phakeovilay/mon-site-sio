@@ -2,6 +2,7 @@
     --main-color-blue:#1800AD;
     --main-color-light-blue:#38b6ff;
     --main-color-white:white;
+    --hover-color-blue:#0025cc;
 }
 
 h1{
@@ -39,6 +40,7 @@ body{
 }
 
 .menu{
+    margin: 30px;
     text-align: center;
 }
 
@@ -47,11 +49,13 @@ body{
     text-decoration: none;
     background-color: var(--main-color-blue);
     padding: 10px;
+    font-weight: bold;
 }
 
-a:hover{
-    color:var(--main-color-light-blue);
+.menu a:hover{
+    background-color: var(--hover-color-blue);
 }
+
 
 .intro{
     font-size: 20px;
@@ -62,7 +66,7 @@ img{
 }
 
 figure{
-    width: 50%;
+    width: 100%;
     margin: auto;
     border: 1px solid lightgray;
     text-align: center;
@@ -170,4 +174,39 @@ figcaption{
 td img{
     width: 100px;
     height: 100px;
+}
+
+form{
+    width: fit-content;
+    text-align: left;
+    justify-self: center;
+}
+
+.champ{
+    margin-bottom: 10px;
+}
+
+.right{
+    float: right;
+}
+
+label{
+    margin-right: 10px;
+}
+
+input.submit{
+    border: none;
+    background-color: var(--main-color-blue);
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+input.submit:hover{
+    cursor: pointer;
+    background-color: #0025cc;
+}
+
+fieldset{
+    border: 1px solid #a4d4ff;
 }
