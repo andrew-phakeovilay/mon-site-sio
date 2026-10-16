@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<title>E-Pitchounes - Nous rejoindre</title>
+		<style>
+			.div-center{
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div-center" style="background-color: var(--main-color-blue);">
+			<img class="logo-image" src="images/logo-bleu.png" alt="Logo E-Pitchounes" />
+		</div>
+
+		<nav>
+			<ul>
+				<li><a href="index.html"><span>ACCUEIL</span></a></li>
+				<li><a href="actions.html"><span>ACTIONS</span></a></li>
+			</ul>
+		</nav>
+
+		<h1 style="text-align:center">NOUS REJOINDRE</h1>
+
+        <form>
+            <fieldset style="background-color: aliceblue;">
+                <legend><strong>Rejoindre l'association</strong></legend>
+                <div class="champ">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" class="right">
+                </div>
+
+                <div class="champ">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" class="right">
+                </div>
+
+                <div class="champ">
+                    <label for="mail">Adresse mail :</label>
+                    <input type="email" id="mail" name="mail" class="right">
+                </div>
+
+                <div class="champ">
+                    <label for="pass">Mot de passe :</label>
+                    <input type="password" id="pass" name="pass" class="right">
+                </div>
+
+                <div class="champ">
+                    <label for="age">Age :</label>
+                    <input type="number" id="age" name="age" class="right">
+                </div>
+
+                <div class="champ" style="text-align: center;">
+                    <input type="radio" id="h" name="sexe" value="homme">
+                    <label for="h">Homme</label>
+
+                    <input type="radio" id="f" name="sexe" value="femme">
+                    <label for="f">Femme</label>
+                </div>
+
+                <div class="champ">
+                    <label for="ville">Ville de résidence :</label>
+                    <select id="ville" name="ville" class="right">
+                        <optgroup label="Île-de-France">
+                            <option value="paris">Paris</option>
+                            <option value="fontainebleau">Fontainebleau</option>
+                            <option value="nanterre">Nanterre</option>
+                            <option value="melun">Melun</option>
+                            <option value="cergy">Cergy</option>
+                            <option value="boulogne-billancourt">Boulogne-Billancourt</option>
+                        </optgroup>
+
+                        <optgroup label="Occitanie">
+                            <option value="toulouse">Toulouse</option>
+                            <option value="nimes">Nîmes</option>
+                            <option value="beziers">Béziers</option>
+                            <option value="montpellier">Montpellier</option>
+                            <option value="perpignan">Perpignan</option>
+                            <option value="montauban">Montauban</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="champ">
+                    <label for="competences">Compétences / expérience :</label>
+                    <input type="checkbox" id="web" name="competences" value="web">
+                    <label for="web">Web</label>
+                    <input type="checkbox" id="app" name="competences" value="app">
+                    <label for="Applications">Applications</label>
+                    <input type="checkbox" id="reseau" name="competences" value="reseau">
+                    <label for="reseau">Réseau</label>
+                </div>
+
+                <div class="champ">
+                    <textarea name="introduction" placeholder="Décrivez-vous" style="width: stretch;"></textarea>
+                </div>
+
+                <input type="submit" value="Rejoindre" style="width: stretch;" class="submit">
+
+            </fieldset>
+        </form>
+
+
+	</body>
+</html>

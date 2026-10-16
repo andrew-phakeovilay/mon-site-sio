@@ -39,23 +39,6 @@ body{
     margin: 10px;
 }
 
-.menu{
-    margin: 30px;
-    text-align: center;
-}
-
-.menu a{
-    color:white;
-    text-decoration: none;
-    background-color: var(--main-color-blue);
-    padding: 10px;
-    font-weight: bold;
-}
-
-.menu a:hover{
-    background-color: var(--hover-color-blue);
-}
-
 
 .intro{
     font-size: 20px;
@@ -92,7 +75,7 @@ figcaption{
     font-size: 40px;
 }
 
-.team{
+#team{
     justify-self: center;
     margin-top: 10px;
     width: 50%;
@@ -101,7 +84,7 @@ figcaption{
     border: 1px solid lightgray;
 }
 
-.team caption{
+#team caption{
     font-size: 35px;
     font-weight: bold;
     text-transform: uppercase;
@@ -110,15 +93,15 @@ figcaption{
     margin-bottom: 10px;
 }
 
-.team tr, 
-.team td, 
-.team th{
+#team tr, 
+#team td, 
+#team th{
     padding: 10px;
     color:white;
     background-color: var(--main-color-light-blue);
 }
 
-.team th{
+#team th{
     background-color: var(--main-color-blue);
 }
 
@@ -209,4 +192,45 @@ input.submit:hover{
 
 fieldset{
     border: 1px solid #a4d4ff;
+}
+
+nav{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: var(--main-color-blue);
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: var(--hover-color-blue);
+    border-bottom: 2px solid var(--hover-color-blue);
 }
