@@ -7,10 +7,11 @@
 
 ## Historique de commits
 
-| Historique du plus vieux au récent | |
+| Hash | Message |
 | :--- | ---: |
-| c228106 (HEAD -> main, origin/main) | Ajout du site web | 
+| c228106 | Ajout du site web | 
 | 1208c62 | ajout du readme | 
 | deb10a1 | modification du readme | 
 | f5ce462 | Mise à jour des fichier 9 octobre | 
-| 62c744c (HEAD -> main, origin/main, origin/HEAD) | Mise à jour des pages 16/10 |
+| 62c744c | Mise à jour des pages 16/10 |
+| d59a6c8 | Mise à jour des commits du readme |
